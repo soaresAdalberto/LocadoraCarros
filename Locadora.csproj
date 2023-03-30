@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43357083-E02B-4053-860B-AB90EE2FB450}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Locadora</RootNamespace>
+    <AssemblyName>Locadora</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Telas\Clientes\AdicionarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Clientes\AdicionarClientes.Designer.cs">
+      <DependentUpon>AdicionarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Clientes\BuscarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Clientes\BuscarClientes.Designer.cs">
+      <DependentUpon>BuscarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Clientes\EditarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Clientes\EditarClientes.Designer.cs">
+      <DependentUpon>EditarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Clientes\RemoverClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Clientes\RemoverClientes.Designer.cs">
+      <DependentUpon>RemoverClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\AdicionarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\AdicionarVeiculo.Designer.cs">
+      <DependentUpon>AdicionarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\EditarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\EditarVeiculo.Designer.cs">
+      <DependentUpon>EditarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\RemoverVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\RemoverVeiculos.Designer.cs">
+      <DependentUpon>RemoverVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Estoque\VisualizarEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Estoque\VisualizarEstoque.Designer.cs">
+      <DependentUpon>VisualizarEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Locações\DevLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Locações\DevLocacao.Designer.cs">
+      <DependentUpon>DevLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Locações\HistLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Locações\HistLocacao.Designer.cs">
+      <DependentUpon>HistLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Locações\RealizarLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Locações\RealizarLocacao.Designer.cs">
+      <DependentUpon>RealizarLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Locações\RetOrcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Locações\RetOrcamento.Designer.cs">
+      <DependentUpon>RetOrcamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Parâmetros\Metas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Parâmetros\Metas.Designer.cs">
+      <DependentUpon>Metas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Parâmetros\Relatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Parâmetros\Relatorios.Designer.cs">
+      <DependentUpon>Relatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Parâmetros\Suporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Parâmetros\Suporte.Designer.cs">
+      <DependentUpon>Suporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Usuários\BuscarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Usuários\BuscarUsuarios.Designer.cs">
+      <DependentUpon>BuscarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Usuários\CriarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Usuários\CriarUsuarios.Designer.cs">
+      <DependentUpon>CriarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Alpha\TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Alpha\TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Alpha\TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Alpha\TelaLogin.Designer.cs">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\Usuários\EditarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Usuários\EditarUsuarios.Designer.cs">
+      <DependentUpon>EditarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Usuários\MeuUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Usuários\MeuUsuario.Designer.cs">
+      <DependentUpon>MeuUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Usuários\RemoverUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Usuários\RemoverUsuarios.Designer.cs">
+      <DependentUpon>RemoverUsuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\Clientes\AdicionarClientes.resx">
+      <DependentUpon>AdicionarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Clientes\BuscarClientes.resx">
+      <DependentUpon>BuscarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Clientes\EditarClientes.resx">
+      <DependentUpon>EditarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Clientes\RemoverClientes.resx">
+      <DependentUpon>RemoverClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Estoque\AdicionarVeiculo.resx">
+      <DependentUpon>AdicionarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Estoque\EditarVeiculo.resx">
+      <DependentUpon>EditarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Estoque\RemoverVeiculos.resx">
+      <DependentUpon>RemoverVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Estoque\VisualizarEstoque.resx">
+      <DependentUpon>VisualizarEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Locações\DevLocacao.resx">
+      <DependentUpon>DevLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Locações\HistLocacao.resx">
+      <DependentUpon>HistLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Locações\RealizarLocacao.resx">
+      <DependentUpon>RealizarLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Locações\RetOrcamento.resx">
+      <DependentUpon>RetOrcamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Parâmetros\Metas.resx">
+      <DependentUpon>Metas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Parâmetros\Relatorios.resx">
+      <DependentUpon>Relatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Parâmetros\Suporte.resx">
+      <DependentUpon>Suporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Usuários\BuscarUsuarios.resx">
+      <DependentUpon>BuscarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Usuários\CriarUsuarios.resx">
+      <DependentUpon>CriarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\Alpha\TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Alpha\TelaLogin.resx">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Usuários\EditarUsuarios.resx">
+      <DependentUpon>EditarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Usuários\MeuUsuario.resx">
+      <DependentUpon>MeuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Usuários\RemoverUsuarios.resx">
+      <DependentUpon>RemoverUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
